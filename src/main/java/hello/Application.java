@@ -18,6 +18,11 @@ public class Application {
         User user = restTemplate.getForObject("http://graph.facebook.com/alexander.varchenko", User.class);
         System.out.println("Name:    " + user.getName());
         System.out.println("Gender:  " + user.getGender());
+
+        user = restTemplate.getForObject("http://graph.facebook.com/olesya.pop", User.class);
+        System.out.println("Name:    " + user.getName());
+        System.out.println("Gender:  " + user.getGender());
+
     }
 
 }
